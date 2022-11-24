@@ -38,22 +38,40 @@
 
 // ----------------------------------------------------------------
 
-const pratica3 = (login, senha) => {
-  const loginArmazenado = "admin"
-  const senhaArmazenado = "adminadmin"
-  login = prompt("Digite seu Login")
-  senha = prompt("Digite sua Senha")
-return login === loginArmazenado
-   &&  senha === senhaArmazenado
-}
+// const pratica3 = (login, senha) => {
+//   const loginArmazenado = "admin"
+//   const senhaArmazenado = "adminadmin"
+//   login = prompt("Digite seu Login")
+//   senha = prompt("Digite sua Senha")
+// return login === loginArmazenado
+//    &&  senha === senhaArmazenado
+// }
 
-function pratica3Function (login,senha) {
-  const loginArmazenado = "admin"
-  const senhaArmazenado = "adminadmin"
-  login = prompt("Digite seu Login")
-  senha = prompt("Digite sua Senha")
-return login === loginArmazenado
-   &&  senha === senhaArmazenado
+// function pratica3Function (login,senha) {
+//   const loginArmazenado = "admin"
+//   const senhaArmazenado = "adminadmin"
+//   login = prompt("Digite seu Login")
+//   senha = prompt("Digite sua Senha")
+// return login === loginArmazenado
+//    &&  senha === senhaArmazenado
+// }
+// console.log(pratica3())
+// console.log(pratica3Function())
+
+// -------------------------------------------------------------------
+
+// Declare uma função que:
+// Receba um nome, um ano de nascimento e o ano  Atual 
+// Retorne uma string com um boleano true para se o usuário for maior de idade e false para se for menor de idade. 
+// A string retornada deve ter a seguinte mensagem:
+// “Fulano é maior de idade? true”
+// Chame a função duas vezes, passando como argumento nomes e anos de nascimento diferentes.
+
+function pratica4(nome,anoDeNascimento,anoAtual) {
+  const nomeDigitado = prompt('Seu nome');
+  const anoNascimentoDigitado =Number(prompt("Ano de Nascimento"));
+       
+    return `${nome} é maior de idade? ${anoAtual-anoDeNascimento>=18} 
+${nomeDigitado} é maior de idade? ${anoAtual-anoNascimentoDigitado>=18}`;
 }
-console.log(pratica3())
-console.log(pratica3Function())
+console.log(pratica4('kiniti',1995,2022));

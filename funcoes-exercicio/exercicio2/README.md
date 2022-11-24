@@ -1,4 +1,4 @@
-# Exercício 2
+            # Exercício 2
 Declare e chame as funções abaixo:
 
 a) Uma função que receba 2 números como parâmetros, e, dentro da função, faça a soma das duas entradas e imprima o resultado. Invoque a função e imprima no console o resultado.
