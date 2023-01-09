@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    padding: 5vh;
+    width: 100%;
+    height: 3vh;
+    text-align: center;
+    border-bottom: 1px solid black;
+    background-color: aquamarine;
+  }
+
+  main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+  }
+  footer{
+    padding: 32px;
+    border-top: 0.4px solid#1f140c;
+    left: 0;
+    bottom: 0;
+    position:fixed;
+    background-color:  beige;
+   width: 100%;
+   text-align: center;
+    
+  }

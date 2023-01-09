@@ -1,0 +1,56 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header{
+    border-bottom: 1px solid black;
+  }
+header>h1 {
+  text-align: center;
+}
+header>h3 {
+  text-align: left;
+  margin: 0 0 0 2vw;
+}
+section{ 
+
+ margin:5vw 20vw 10vw 20vw;
+}
+
+  
+  aside{
+    right: 0;
+    top: 10vw;
+    position: fixed;
+    width: 180px;
+    border: 1px solid black;
+  }
+  #btn:hover{
+    height: 55px;
+    width: 55px;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 100px;
+    transition: cubic-bezier(0.3, 0.02, 0.365, 1) 3s;
+    transform: scale(1.2);
+    background-color:thistle;
+
+  }
+
+  
+  footer{
+    left: 0;
+    bottom: 0;
+    position:fixed;
+    background-color: black;
+    color: white;
+    width: 100%;
+  }
+  
+  button{
+    background-color: black;
+    color: white;
+    font-family: serif;
+  }

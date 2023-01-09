@@ -102,31 +102,31 @@
 
 // ----------------------------------------------------------------------------------
 
-const animais = [
-    {
-        nome: 'CACHORRO',
-        nomeCientifico: 'Canis lupus familiaris',
-        tempoMedioDeVida: 12,
-        classe: 'mamiferos',
-        ambiente: 'urbano',
-        extinto: false,
-    },
-    {
-        nome: 'GATO',
-        nomeCientifico: 'Felis catus',
-        tempoMedioDeVida: 15,
-        classe: 'mamiferos',
-        ambiente: 'urbano',
-        extinto: false,
-    },
-    {
-        nome: 'COELHO',
-        nomeCientifico: 'Lagomorpha',
-        tempoMedioDeVida: 9,
-        classe: 'mamiferos',
-        ambiente: 'Os coelhos vivem em ambientes onde há vegetação densa e que permitem que esses animais se escondam entre as plantas ou em tocas',
-        extinto: false,
-    }];
+// const animais = [
+//     {
+//         nome: 'CACHORRO',
+//         nomeCientifico: 'Canis lupus familiaris',
+//         tempoMedioDeVida: 12,
+//         classe: 'mamiferos',
+//         ambiente: 'urbano',
+//         extinto: false,
+//     },
+//     {
+//         nome: 'GATO',
+//         nomeCientifico: 'Felis catus',
+//         tempoMedioDeVida: 15,
+//         classe: 'mamiferos',
+//         ambiente: 'urbano',
+//         extinto: false,
+//     },
+//     {
+//         nome: 'COELHO',
+//         nomeCientifico: 'Lagomorpha',
+//         tempoMedioDeVida: 9,
+//         classe: 'mamiferos',
+//         ambiente: 'Os coelhos vivem em ambientes onde há vegetação densa e que permitem que esses animais se escondam entre as plantas ou em tocas',
+//         extinto: false,
+//     }];
 
 const filmes = [
     {
@@ -157,43 +157,63 @@ const filmes = [
         nota: 4.4
     }]
 
-const comidas = [
-    {
-        nome: 'PIZZA',
-        descricao: 'pizza deve apresentar-se macia, bem assada, suave, elástica, fácil de ser dobrada pela metade. As bordas elevadas devem ser douradas". O gosto da massa deve ser de pão bem fermentado, misturado ao sabor ácido do tomate, aroma de alho, orégano, manjericão.',
-        ingrediente: ['Farinha', 'açucar', 'sal', 'agua', 'fermento', 'molho de tomate', 'mussarela', 'tomate', 'oregano'],
-        preco: 60.00,
-        categoria: 'Fast Food',
-        vegetariano: false || true
-    },
-    {
-        nome: 'CACHORRO QUENTE',
-        descricao: 'Um cachorro-quente é uma comida típica dos Estados Unidos em que se coloca salsicha dentro de um pão sovado. Nos Estados Unidos, o preparo típico do cachorro-quente é colocando a salsicha com o molho agridoce, picles à base de pepino, mostarda e ketchup.',
-        ingredientes: ['vina', 'molho de tomate', 'cebola', 'pimentao', 'alho', 'milho', 'oleo', 'cheiro verde', 'sal', 'pao', 'ketchup', 'maionese', 'mostarde'],
-        preco: 20.00,
-        categoria: 'Fast Food',
-        vegetariano: false
-    },
-    {
-        nome: 'CANJICA',
-        descricao: 'Munguzá, mugunzá ou Canjica é uma iguaria doce feita de grãos de milho-branco ou amarelo levemente triturados, cozidos em um caldo contendo leite de coco ou de vaca, açúcar, canela em pó ou casca e cravo-da-índia.',
-        ingrediente: ['canjica', 'coco ralado', 'açucar', 'leite de coco', 'leite', 'pau de canela', 'cravinho', 'canela em po'],
-        preco: 20.00,
-        categoria: 'Caseiro',
-        vegetariano: true
-    }]
+// const comidas = [
+//     {
+//         nome: 'PIZZA',
+//         descricao: 'pizza deve apresentar-se macia, bem assada, suave, elástica, fácil de ser dobrada pela metade. As bordas elevadas devem ser douradas". O gosto da massa deve ser de pão bem fermentado, misturado ao sabor ácido do tomate, aroma de alho, orégano, manjericão.',
+//         ingrediente: ['Farinha', 'açucar', 'sal', 'agua', 'fermento', 'molho de tomate', 'mussarela', 'tomate', 'oregano'],
+//         preco: 60.00,
+//         categoria: 'Fast Food',
+//         vegetariano: false || true
+//     },
+//     {
+//         nome: 'CACHORRO QUENTE',
+//         descricao: 'Um cachorro-quente é uma comida típica dos Estados Unidos em que se coloca salsicha dentro de um pão sovado. Nos Estados Unidos, o preparo típico do cachorro-quente é colocando a salsicha com o molho agridoce, picles à base de pepino, mostarda e ketchup.',
+//         ingredientes: ['vina', 'molho de tomate', 'cebola', 'pimentao', 'alho', 'milho', 'oleo', 'cheiro verde', 'sal', 'pao', 'ketchup', 'maionese', 'mostarde'],
+//         preco: 20.00,
+//         categoria: 'Fast Food',
+//         vegetariano: false
+//     },
+//     {
+//         nome: 'CANJICA',
+//         descricao: 'Munguzá, mugunzá ou Canjica é uma iguaria doce feita de grãos de milho-branco ou amarelo levemente triturados, cozidos em um caldo contendo leite de coco ou de vaca, açúcar, canela em pó ou casca e cravo-da-índia.',
+//         ingrediente: ['canjica', 'coco ralado', 'açucar', 'leite de coco', 'leite', 'pau de canela', 'cravinho', 'canela em po'],
+//         preco: 20.00,
+//         categoria: 'Caseiro',
+//         vegetariano: true
+//     }]
 
 const todosItens = [animais, filmes, comidas]
+
+function procurarObjeto(arr, key) {
+    for (food of arr) {
+        if (food.nome)
+    }
+
+}
+
+procurarObjeto(comidas, extinto)
+
+
+
+
+
+
+
+
+
 
 // for (i in comidas) {
 //     console.table(comidas[i].preco)
 // }
 
-function buscarObjeto(arr, key) {
-    return arr.filter(arr => arr.nome)
+// function buscarObjeto(arr, key) {
+//     return arr.filter(arr => arr.nome)
 
-}
+// }
 
-const achar = buscarObjeto(comidas)
+// function buscarObjeto(arr,key)
 
-console.log(achar)  
+// const achar = buscarObjeto(comidas)
+
+// console.log(achar)  
