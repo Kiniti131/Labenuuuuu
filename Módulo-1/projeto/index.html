@@ -9,17 +9,34 @@
     <title>Document</title>
 </head>
 <body>
+    
+    <div class="container">
+    <header id='cabecalho'>
+        <nav class="cabecalho-menu">
+            <a class="cabecalho-menu-item" href="netflix.com">Para mais filmes</a>
+            <a class="cabecalho-menu-item">Inicio</a =class">
+            <a class="cabecalho-menu-item">Filmes</a>
+            <a class="cabecalho-menu-item">Contato</a>
+         </nav>
+
+    </header>
+    
     <div class="search-wrapper">
-        <label for="search" >search movie</label>
+        <label for="search" >Pesquisar</label>
         <input type="search" id="search" data-search>
     </div>
     <div class="movie-card" data-user-movie-container></div>
     <template data-movie-template>
         <div class="movie">
+            <img class="image1" data-src="image1">
             <div class="header" data-header></div>
+           
             <div class="body" data-body></div>
+            
         </div>
     </template>
-    
+
+    <footer class="rodape">Footer</footer>
+</div>
 </body>
 </html>

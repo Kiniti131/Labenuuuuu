@@ -6,7 +6,8 @@ const filmes = [
         ano: 2002,
         genero: 'comedia',
         remake: false,
-        nota: 4.5
+        nota: 4.5,
+        img: "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/1DD9097D49463E20D091B7EAE0DF2DE14D0475D33AC5C08B960F69493B21387F/scale?width=1200&aspectRatio=1.78&format=jpeg"
     },
     {
         nome: 'A NOVA ONDA DO IMPERADOR',
@@ -15,7 +16,8 @@ const filmes = [
         ano: 2000,
         genero: 'comedia',
         remake: false,
-        nota: 4.3
+        nota: 4.3,
+        img: "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/44CBE0A984B3BB9D42A622ED03864BF198B17909DA23EE5DAC659F1981E194F4/scale?width=1200&aspectRatio=1.78&format=jpeg"
     },
     {
         nome: 'MADAGASCAR',
@@ -24,12 +26,16 @@ const filmes = [
         ano: 2005,
         genero: 'comedia',
         remake: false,
-        nota: 4.4
+        nota: 4.4,
+        img: "https://midias.gazetanews.com/wp-content/uploads/2012/06/poster-madagascar-3.jpg"
     }]
 
 const movieCardTemplate = document.querySelector("[data-movie-template]")
 const movieCardContainer = document.querySelector("[data-user-movie-container]")
 const searchInput = document.querySelector("[data-search]")
+
+const calculoMedioNota = `A média das notas dos filmes A era do Gelo, Madagascar e a Nova era do Imperador é: ${(aEraDoGelo.nota + aNovaOndaDoImperador.nota + madagascar.nota) / 3}`;
+console.log(calculoMedioNota);
 
 let movies = []
 
@@ -45,8 +51,11 @@ movies = filmes.map(user => {
     const movie = movieCardTemplate.content.cloneNode(true).children[0]
     const header = movie.querySelector("[data-header]")
     const body = movie.querySelector("[data-body]")
+    const image1 = movie.querySelector("[data-src]");
+
     header.textContent = user.nome
     body.textContent = user.sinopse
+    image1.src = user.img
     movieCardContainer.append(movie)
     return {
         nome: user.nome,
@@ -55,8 +64,11 @@ movies = filmes.map(user => {
         ano: user.ano, genero: user.genero,
         remake: user.remake,
         nota: user.nota,
+        image: user.img,
         element: movie
+
     }
 })
+
 
 console.log(filmes[0].nome)
