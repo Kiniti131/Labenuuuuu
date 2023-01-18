@@ -8,6 +8,7 @@
 
 .container {
     width: 100vw;
+    height: 90vh;
 }
 
 header{
@@ -97,7 +98,7 @@ input{
 
 .movie-card{
     position: relative;
-    bottom: -100px;
+    top: 20vh;
     width :100vw;
     height : 35vh;  
     background-color : #fff;
@@ -189,7 +190,10 @@ input{
 }
 
 .rodape {
-    padding: 32px;
+    position: absolute;
+    bottom:0;
+    width: 100vw;
+    padding: 0.3rem;
     border-top: 0.4px solid#5e422b;
     background-blend-mode: screen;
 }  

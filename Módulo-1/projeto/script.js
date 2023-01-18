@@ -34,8 +34,10 @@ const movieCardTemplate = document.querySelector("[data-movie-template]")
 const movieCardContainer = document.querySelector("[data-user-movie-container]")
 const searchInput = document.querySelector("[data-search]")
 
-const calculoMedioNota = `A média das notas dos filmes A era do Gelo, Madagascar e a Nova era do Imperador é: ${(aEraDoGelo.nota + aNovaOndaDoImperador.nota + madagascar.nota) / 3}`;
+const calculoMedioNota = `A média das notas dos filmes A era do Gelo, Madagascar e a Nova era do Imperador é: ${(filmes[0].nota + filmes[1].nota + filmes[2].nota) / 3}`;
 console.log(calculoMedioNota);
+console.log(`Madagascar tem remake?${filmes[2].remake}`)
+console.log(filmes[0].nome)
 
 let movies = []
 
@@ -71,4 +73,3 @@ movies = filmes.map(user => {
 })
 
 
-console.log(filmes[0].nome)
